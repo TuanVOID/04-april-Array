@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Inverse</title>
+</head>
+<body>
+<input type="text" id="input">
+<input type="button" onclick="inverse1()" value="inverse">
+<script>
+
+
+    let x = document.getElementById("input").value;
+    let first = 0;
+    let last = x.length - 1;
+    <p id="show"></p>
+
+    function inverse1() {
+    while (first < last) {
+        let b = x[first];
+        x[first] = x[last];
+        x[last] = b;
+        first++;
+        last--;
+    }
+    document.getElementById("show").innerHTML = x
+}
+</script>
+</body>
+</html>
