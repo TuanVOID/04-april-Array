@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tim gtri max</title>
+</head>
+<body>
+<script>
+    let numbers = [-3, 5, 8, 19, 22, 4, 7];
+    let max = numbers[0];
+    let index = 0;
+    // for (let i = 0; i < numbers.length; i++) {
+    //     if (numbers[i] > max) {
+    //         max = numbers[i]
+    //         index = i;
+    //     }
+    // } alert(`So lon nhat trong mang la ${numbers[index]} tai index = ${index}`)
+
+    // so lon thu 2 trong mang
+    for (let i = 0; i < numbers.length; i++) {
+        if (numbers[i] > max) {
+            max = numbers[i]
+            index = i;
+        }
+    }
+    alert(`So lon nhat trong mang la ${numbers[index]} tai index = ${index}`)
+    numbers[index] = numbers[0];
+    let index2 = 0;
+    let max2 = numbers[0]
+    for (let i = 0; i < numbers.length; i++) {
+        if (numbers[i] > max2) {
+            max2 = numbers[i]
+            index2 = i;
+        }
+    }
+    alert(`So lon thu 2 trong mang la ${numbers[index2]} tai index = ${index2}`)
+
+</script>
+</body>
+</html>
